@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+*{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     font-family: "Lora", serif;
+     background-color: black;
+     color: white;
+}
+.parallex {
+     background-image: url("./assets/contactimage2.png");
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.parallexAbout {
+     background-image: url("./assets/roofImage.png");
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+/* .bgVi {
+    background-image: url("./assets/Vihero.png");
+
+     background-position: top;
+     background-repeat: no-repeat;
+     background-size: contain; 
+     
+} */
+
+.floating-label {
+      position: absolute;
+      left: 0.5rem;
+      top: 0.75rem;
+      pointer-events: none;
+      transition: all 0.2s ease;
+    }
+
+    .input-field:focus + .floating-label,
+    .input-field:not(:placeholder-shown) + .floating-label {
+      top: -0.75rem;
+      left: 0.5rem;
+      font-size: 0.75rem;
+      color: #d4af37; /* Gold color for focus state */
+    }
