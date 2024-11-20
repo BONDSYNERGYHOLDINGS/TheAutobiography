@@ -8,8 +8,23 @@ import { IoLocation } from "react-icons/io5";
 import { CiDumbbell } from "react-icons/ci";
 import { GiTheater } from "react-icons/gi";
 import { FaLaptop } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const ViProp = () => {
+  const navigate = useNavigate();
+
+  const oneBedClick = () => {
+    navigate("/vionebed")
+  } 
+  const twoBedClick = () => {
+    navigate("/vitwobed")
+  } 
+  const threeBedClick = () => {
+    navigate("/vithreebed")
+  } 
+  const threemaisonetteClick = () => {
+    navigate("/vithreemaisonette")
+  } 
   return (
     <section className="md:mt-28 mt-10">
       <div
@@ -46,7 +61,7 @@ const ViProp = () => {
                     Victoria Island, Lagos.
                   </p>
                 </div>
-                <button className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
+                <button onClick={oneBedClick} className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
                   <IoIosArrowForward />
                   See more
                 </button>
@@ -96,7 +111,7 @@ const ViProp = () => {
                     Victoria Island, Lagos.
                   </p>
                 </div>
-                <button className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
+                <button onClick={twoBedClick} className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
                   <IoIosArrowForward />
                   See more
                 </button>
@@ -149,7 +164,7 @@ const ViProp = () => {
                     Victoria Island, Lagos.
                   </p>
                 </div>
-                <button className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
+                <button onClick={threeBedClick} className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
                   <IoIosArrowForward />
                   See more
                 </button>
@@ -199,7 +214,7 @@ const ViProp = () => {
                     Victoria Island, Lagos.
                   </p>
                 </div>
-                <button className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
+                <button onClick={threemaisonetteClick} className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
                   <IoIosArrowForward />
                   See more
                 </button>
