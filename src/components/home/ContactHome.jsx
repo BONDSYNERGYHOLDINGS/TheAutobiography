@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactImage from "../../assets/ContactImage.png"
+import ContactImage from "../../assets/contactImage.png"
 import { IoIosArrowForward } from "react-icons/io";
 
 
