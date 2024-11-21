@@ -4,7 +4,7 @@ import Auto_img11 from '../../assets/auto_img11.jpg';
 import Auto_img12 from '../../assets/auto_img12.jpg';
 import Auto_img13 from '../../assets/auto_img13.jpg';
 import Auto_img10 from '../../assets/HomeLand.png';
-import './hero.css';
+import './Hero.css';
 
 function Hero() {
   const items = [
