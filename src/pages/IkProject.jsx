@@ -1,12 +1,13 @@
 import React from 'react'
 import IkHero from '../components/IkProject/IkHero'
 import IkMap from '../components/IkProject/IkMap'
+import IkProp from '../components/IkProject/IkProp'
 
 const IkProject = () => {
   return (
       <section>
           <IkHero />
-          <IkProject />
+          <IkProp />
           <IkMap />
     </section>
   )

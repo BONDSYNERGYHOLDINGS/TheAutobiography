@@ -3,6 +3,7 @@ import {lazy, Suspense} from 'react'
 import "./index.css"
 
 import { BrowserRouter, Route, Routes, } from 'react-router-dom';
+
 const Home = lazy(() => import("./pages/Home"));
 const Navbar = lazy(() => import("./components/navbar/Navbar"));
 const Footer = lazy(() => import("./components/footer/Footer"));
@@ -31,6 +32,7 @@ function App() {
           <Route path="/viprop" element={<ViProject />} />
           <Route path="/ikejaprop" element={<IkeProject />} />
           <Route path="/ikoyiprop" element={<IkProject />} />
+         
           <Route path="/contact" element={<Contact />} />
           <Route path="/vionebed" element={<ViOneBed />} />
           <Route path="/vitwobed" element={<ViTwoBed />} />

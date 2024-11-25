@@ -11,6 +11,7 @@ const AboutHero = () => {
       {/* ABOUT HERO SECTION */}
       <div className="md:mt-0 mt-20">
         <img
+          className="w-full h-full object-cover"
           loading="lazy"
           src={AboutImage}
           alt="Image of Autobiography property"
@@ -103,7 +104,9 @@ const AboutHero = () => {
       {/* PARALLEX IMAGE */}
       <section className="mt-20 h-[500px] flex items-center justify-center  parallexAbout">
         <div className=" bg-black text-white flex flex-col gap-6 py-10 px-8 md:w-5/12 items-center justify-center ">
-          <h2 className="font-bold md:text-[20px] text-[18px]">LUXURY AWAITS YOU</h2>
+          <h2 className="font-bold md:text-[20px] text-[18px]">
+            LUXURY AWAITS YOU
+          </h2>
           <p className="text-[16px] text-center">
             An architectural marvel that redefines modern living. A symphony of
             elegance crafted for the elites

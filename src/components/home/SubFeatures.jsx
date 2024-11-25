@@ -1,6 +1,12 @@
 import React from 'react'
 import { LiaSwimmingPoolSolid } from "react-icons/lia";
 import ContractLogo from "../../assets/contractLogo.png"
+import { FaConciergeBell, FaDoorOpen, FaParking } from 'react-icons/fa';
+import { PiElevatorDuotone } from 'react-icons/pi';
+import { FaKitchenSet } from 'react-icons/fa6';
+import { TbDeviceCctv } from 'react-icons/tb';
+import { GrLounge } from 'react-icons/gr';
+import { GiPowerLightning } from 'react-icons/gi';
 
 
 const SubFeatures = () => {
@@ -20,14 +26,13 @@ const SubFeatures = () => {
               FEATURES & FACILITIES
             </h2>
             <p className="md:text-[20px] text-[16px] w-full md:px-0 px-3">
-              An architectural marvel that redefines modern living. A symphony
-              of elegance crafted for the elites, where sophistication meets
-              personal expression.
+              The Autobiography is a masterpiece of bold design, vibrant
+              colours, and luxurious finishes.
             </p>
           </div>
           {/* LIST OF FEATURES */}
           <div>
-            <div className="grid md:grid-cols-6 grid-cols-3 gap-8 p-8">
+            <div className="grid md:grid-cols-5 grid-cols-3 gap-8 p-8">
               {/* icon 1 */}
               <div className="flex flex-col gap-3 items-center justify-center border-[#ffffff42] drop-shadow-md border-2 p-5">
                 <span className="text-[#dfbf6c] text-[60px]">
@@ -42,56 +47,45 @@ const SubFeatures = () => {
               {/* icon 1 */}
               <div className="flex flex-col gap-3 items-center justify-center border-[#ffffff42] drop-shadow-md border-2 p-5">
                 <span className="text-[#dfbf6c] text-[60px]">
-                  <LiaSwimmingPoolSolid />
+                  <FaConciergeBell />
                 </span>
                 <p className="text-center">
-                  Rooftop
+                  24/7 Concierge
                   <br />
-                  Swimming pool
+                  service
                 </p>
               </div>
               {/* icon 1 */}
               <div className="flex flex-col gap-3 items-center justify-center border-[#ffffff42] drop-shadow-md border-2 p-5">
                 <span className="text-[#dfbf6c] text-[60px]">
-                  <LiaSwimmingPoolSolid />
+                  <PiElevatorDuotone />
                 </span>
                 <p className="text-center">
-                  Rooftop
+                  High speed
                   <br />
-                  Swimming pool
+                  elevator
                 </p>
               </div>
               {/* icon 1 */}
               <div className="flex flex-col gap-3 items-center justify-center border-[#ffffff42] drop-shadow-md border-2 p-5">
                 <span className="text-[#dfbf6c] text-[60px]">
-                  <LiaSwimmingPoolSolid />
+                  <FaKitchenSet />
                 </span>
                 <p className="text-center">
-                  Rooftop
+                  Fully fitted
                   <br />
-                  Swimming pool
+                  kitchen
                 </p>
               </div>
               {/* icon 1 */}
               <div className="flex flex-col gap-3 items-center justify-center border-[#ffffff42] drop-shadow-md border-2 p-5">
                 <span className="text-[#dfbf6c] text-[60px]">
-                  <LiaSwimmingPoolSolid />
+                  <GrLounge />
                 </span>
                 <p className="text-center">
-                  Rooftop
+                  Interactive
                   <br />
-                  Swimming pool
-                </p>
-              </div>
-              {/* icon 1 */}
-              <div className="flex flex-col gap-3 items-center justify-center border-[#ffffff42] drop-shadow-md border-2 p-5">
-                <span className="text-[#dfbf6c] text-[60px]">
-                  <LiaSwimmingPoolSolid />
-                </span>
-                <p className="text-center">
-                  Rooftop
-                  <br />
-                  Swimming pool
+                  lounge
                 </p>
               </div>
             </div>
@@ -99,45 +93,40 @@ const SubFeatures = () => {
               {/* icon 1 */}
               <div className="flex flex-col gap-3 items-center justify-center border-[#ffffff42] drop-shadow-md border-2 p-5">
                 <span className="text-[#dfbf6c] text-[60px]">
-                  <LiaSwimmingPoolSolid />
+                  <TbDeviceCctv />
+                </span>
+                <p className="text-center">CCTV</p>
+              </div>
+              {/* icon 1 */}
+              <div className="flex flex-col gap-3 items-center justify-center border-[#ffffff42] drop-shadow-md border-2 p-5">
+                <span className="text-[#dfbf6c] text-[60px]">
+                  <GiPowerLightning />
                 </span>
                 <p className="text-center">
-                  Rooftop
+                  24/7 power
                   <br />
-                  Swimming pool
+                  supply
                 </p>
               </div>
               {/* icon 1 */}
               <div className="flex flex-col gap-3 items-center justify-center border-[#ffffff42] drop-shadow-md border-2 p-5">
                 <span className="text-[#dfbf6c] text-[60px]">
-                  <LiaSwimmingPoolSolid />
+                  <FaDoorOpen />
                 </span>
                 <p className="text-center">
-                  Rooftop
-                  <br />
-                  Swimming pool
+                  Automated door
+                  <br />& windows
                 </p>
               </div>
               {/* icon 1 */}
               <div className="flex flex-col gap-3 items-center justify-center border-[#ffffff42] drop-shadow-md border-2 p-5">
                 <span className="text-[#dfbf6c] text-[60px]">
-                  <LiaSwimmingPoolSolid />
+                  <FaParking />
                 </span>
                 <p className="text-center">
-                  Rooftop
+                  Ample car
                   <br />
-                  Swimming pool
-                </p>
-              </div>
-              {/* icon 1 */}
-              <div className="flex flex-col gap-3 items-center justify-center border-[#ffffff42] drop-shadow-md border-2 p-5">
-                <span className="text-[#dfbf6c] text-[60px]">
-                  <LiaSwimmingPoolSolid />
-                </span>
-                <p className="text-center">
-                  Rooftop
-                  <br />
-                  Swimming pool
+                  park
                 </p>
               </div>
             </div>
@@ -148,7 +137,7 @@ const SubFeatures = () => {
           <h2 className=" text-[#dfbf6c] md:text-[50px] text-[25px] text-center">
             PROJECT CONTRACTORS
           </h2>
-          <div className='md:w-3/5 w-1/2'>
+          <div className="md:w-3/5 w-1/2">
             <img src={ContractLogo} alt="Logos' of Contractors" />
           </div>
         </div>

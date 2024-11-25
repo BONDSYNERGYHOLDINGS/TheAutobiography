@@ -11,9 +11,10 @@ function Hero() {
     {
       img: Auto_img11,
       author: 'LUXURY HOUSE',
-      title: 'DESIGN SLIDER HOUSE',
-      topic: 'MANSION',
-      description: 'A luxury mansion designed with modern architecture and elegant style.'
+      title: 'THE PINNACLE ',
+      title2: ' OF MODERN',
+      topic: 'LUXURY',
+      description: 'Experience luxury redefined in The Autobiography'
     },
     {
       img: Auto_img12,

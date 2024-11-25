@@ -11,9 +11,17 @@ function Navbar() {
    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
   const navigate = useNavigate()
+  
+  const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setIsDropdownOpen(false);
+    setOpen(false)
+  }
 
   const navigateButtonClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     navigate("/contact");
+    setOpen(false)
   };
 
    // Toggle dropdown when "Project" is clicked
@@ -89,7 +97,7 @@ function Navbar() {
              className={`hover:text-[#dfbf6c] md:text-[white] inline-block text-[16px] hover:translate-y-1 duration-500  ${
                active === "/" ? "text-[#dfbf6c]" : " "
              }`}
-             onClick={() => scrollToSection("/")}
+             onClick={handleLinkClick}
            >
              Overview
            </Link>
@@ -100,7 +108,7 @@ function Navbar() {
              className={` hover:text-[#dfbf6c] md:text-[white]  inline-block text-[15px] hover:translate-y-1 duration-500  ${
                active === "/about" ? "text-[#dfbf6c]" : " "
              }`}
-             onClick={() => scrollToSection("/about")}
+             onClick={handleLinkClick}
            >
              Our Journey
            </Link>
@@ -115,68 +123,37 @@ function Navbar() {
            </button>
            {isDropdownOpen && (
              <ul
-               className={`w-[170px] absolute  bg-black p-5 transition-all duration-700 flex items-start justify-center flex-col   ${
+               className={`w-[170px] absolute text-black  bg-white p-5 transition-all duration-700 flex items-start justify-center flex-col  gap-4  ${
                  isDropdownOpen
-                   ? "translate-y-0 mt-10 opacity-100 duration-700 ease-in-out"
+                   ? "translate-y-0 mt-7 opacity-100 duration-700 ease-in-out"
                    : "translate-y-full opacity-0 mt-20 duration-700 ease-in-out"
                } overflow-hidden`}
              >
                <li>
-                 <Link to="/viprop">VI Project</Link>
+                 <Link onClick={handleLinkClick} to="/viprop">
+                   Victoria Island
+                 </Link>
                </li>
                <li>
-                 <Link to="/ikejaprop">Ikeja Project</Link>
+                 <Link onClick={handleLinkClick} to="/ikoyiprop">
+                   Ikoyi{" "}
+                 </Link>
                </li>
                <li>
-                 <Link to="/ikoyiprop">Ikoyi Project</Link>
+                 <Link onClick={handleLinkClick} to="/ikejaprop">
+                   Ikeja
+                 </Link>
                </li>
-             
              </ul>
            )}
          </li>
-         <button onClick={navigateButtonClick} className="border-2 rounded-md py-3 border-[#dfbf6c] px-4 hover:bg-[#dfbf6c] md:text-[white] hover:translate-y-1 duration-500">
+         <button
+           onClick={navigateButtonClick}
+           className="border-2  py-3 border-[#dfbf6c] px-4 hover:bg-[#dfbf6c] md:text-[white] hover:translate-y-1 duration-500"
+         >
            Get in Touch
          </button>
        </ul>
-
-       {/* <ul
-         className={`hidden lg_sm:block z-40 bg-white absolute w-full h-[100vh] top-[65px] py-20 pl-4 duration-500 ${
-           open ? "left-0" : "left-[-100%]"
-         }`}
-       >
-         <li>
-           <button
-             className="py-7 px-3 inline-block"
-             onClick={() => scrollToSection("about")}
-           >
-             About
-           </button>
-         </li>
-         <li>
-           <button
-             className="py-7 px-3 inline-block"
-             onClick={() => scrollToSection("blastoff")}
-           >
-             Blastoff
-           </button>
-         </li>
-         <li>
-           <NavLink
-             className="py-7 px-3 inline-block"
-             to="https://forms.gle/mk4KBuPTHdExcM949"
-             target="_blank"
-           >
-             Partner With Us
-           </NavLink>
-         </li>
-
-         <Link className="py-5" to="https://tix.africa/jetpack" target="_blank">
-           <button className=" shadow-inner bg-[#3A1686] py-2 px-7 text-white flex items-center justify-center gap-2">
-             Get Ticket
-             <MdOutlinePlayArrow className="text-2xl" />
-           </button>
-         </Link>
-       </ul> */}
      </nav>
    </header>
  );

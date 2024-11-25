@@ -6,6 +6,7 @@ import Features from '../components/home/Features'
 import SubFeatures from '../components/home/SubFeatures'
 import ContactHome from '../components/home/ContactHome'
 import ContactHome2 from '../components/home/ContactHome2'
+import Distance from '../components/Distance'
 
 
 
@@ -18,6 +19,7 @@ const Home = () => {
       <OurProject />
       <SubFeatures />
       <ContactHome />
+      <Distance />
       <ContactHome2 />
      
       

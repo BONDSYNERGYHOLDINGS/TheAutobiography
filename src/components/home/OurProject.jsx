@@ -8,8 +8,14 @@ import { IoLocation } from "react-icons/io5";
 import { CiDumbbell } from "react-icons/ci";
 import { GiTheater } from "react-icons/gi";
 import { FaLaptop } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 const OurProject = () => {
+  const navigate = useNavigate();
+  const handleBtn = (path) => {
+    navigate(path)
+    window.scrollTo({top:0, behavior:"smooth"})
+  }
   return (
     <section className="md:mt-28 mt-10">
       <div
@@ -19,12 +25,12 @@ const OurProject = () => {
         {/* HEADING */}
         <div className="md:text-center text-start flex items-center justify-center gap-3 flex-col md:w-3/5 ">
           <h2 className=" text-[#dfbf6c] md:text-[50px] text-[30px]">
-            APARTMENT STRUCTURES
+            APARTMENT SERIES
           </h2>
           <p className="md:text-[20px] text-[16px] w-full md:px-0 px-3">
-            An architectural marvel that redefines modern living. A symphony of
-            elegance crafted for the elites, where sophistication meets personal
-            expression.
+            This luxurious highrise offers an exclusive selection of 1, 2 & 3
+            bedroom residences, and a stunning 3 bedroom maisonette with a
+            rooftop pool.
           </p>
         </div>
         {/* Properties List 1 */}
@@ -51,7 +57,10 @@ const OurProject = () => {
                     Victoria Island, Lagos.
                   </p>
                 </div>
-                <button className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
+                <button
+                  onClick={() => handleBtn("/vionebed")}
+                  className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 "
+                >
                   <IoIosArrowForward />
                   See more
                 </button>
@@ -101,7 +110,10 @@ const OurProject = () => {
                     Victoria Island, Lagos.
                   </p>
                 </div>
-                <button className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
+                <button
+                  onClick={() => handleBtn("/vitwobed")}
+                  className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 "
+                >
                   <IoIosArrowForward />
                   See more
                 </button>
@@ -154,7 +166,10 @@ const OurProject = () => {
                     Victoria Island, Lagos.
                   </p>
                 </div>
-                <button className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
+                <button
+                  onClick={() => handleBtn("/vithreebed")}
+                  className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 "
+                >
                   <IoIosArrowForward />
                   See more
                 </button>
@@ -204,7 +219,10 @@ const OurProject = () => {
                     Victoria Island, Lagos.
                   </p>
                 </div>
-                <button className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
+                <button
+                  onClick={() => handleBtn("/vithreemaisonette")}
+                  className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 "
+                >
                   <IoIosArrowForward />
                   See more
                 </button>

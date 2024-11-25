@@ -32,13 +32,16 @@ const Footer = () => {
                 <span className="text-[#DFBF6C]">
                   <IoMdCall />
                 </span>
-                08141657882
+                <a href="tel:08173768505"> 08141657882</a>
               </p>
               <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
                 <span className="text-[#DFBF6C]">
                   <RiMailOpenFill />
                 </span>
-                info@lcrng.com
+                <a href="mailto: info@lcrng.com" target="_blank">
+                  {" "}
+                  info@lcrng.com
+                </a>
               </p>
               <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
                 <span className="text-[#DFBF6C]">
@@ -61,35 +64,20 @@ const Footer = () => {
               <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
                 <Link to="/about">About</Link>
               </p>
-              <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
-                <Link to="/">FAQ'S</Link>
-              </p>
             </span>
           </div>
           {/* 4th */}
           <div className=" md:w-1/4 flex flex-col gap-4 items-start justify-center md:mt-0 mt-10">
             <h2 className="font-bold md:text-[20px] text-[17px] ">LOCATION</h2>
 
-            <span>
-              <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
-                <span className="text-[#DFBF6C]">
-                  <IoMdCall />
-                </span>
-                08141657882
-              </p>
-              <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
-                <span className="text-[#DFBF6C]">
-                  <RiMailOpenFill />
-                </span>
-                info@lcrng.com
-              </p>
-              <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
-                <span className="text-[#DFBF6C]">
-                  <IoLocation />
-                </span>
-                Landmark HQ
-              </p>
-            </span>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31717.881649289007!2d3.4013447557558285!3d6.428055038022584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf53280e7648d%3A0x4d01e5de6b847fe5!2sVictoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1732555563367!5m2!1sen!2sng"
+             className='w-[300px] h-[150px]'
+             
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </footer>

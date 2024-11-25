@@ -13,7 +13,6 @@ const ContactHome2 = () => {
             <form
               method="post"
               action="https://script.google.com/macros/s/AKfycbwGOxjQtGRSQVGb1twL-Tza2Wo_LfjRdLCROa69v7aLKabsSX3grz8wGy_Yj7TuxPjJOg/exec"
-              
             >
               <div className="flex items-center justify-center gap-14">
                 {/* <!-- First Name Field --> */}
@@ -25,7 +24,10 @@ const ContactHome2 = () => {
                     className="input-field block w-full border-b border-gray-500 bg-transparent px-2 py-3 text-white placeholder-transparent focus:outline-none focus:border-gray-300"
                     placeholder=" "
                   />
-                  <label htmlFor="first_name" className="floating-label text-white">
+                  <label
+                    htmlFor="first_name"
+                    className="floating-label text-white"
+                  >
                     First name
                   </label>
                 </div>
@@ -38,7 +40,10 @@ const ContactHome2 = () => {
                     className="input-field block w-full border-b border-gray-500 bg-transparent px-2 py-3 text-white placeholder-transparent focus:outline-none focus:border-gray-300 "
                     placeholder=" "
                   />
-                  <label htmlFor="last_name" className="floating-label text-white">
+                  <label
+                    htmlFor="last_name"
+                    className="floating-label text-white"
+                  >
                     Last name
                   </label>
                 </div>
@@ -75,7 +80,7 @@ const ContactHome2 = () => {
               {/* <!-- Submit Button --> */}
               <button
                 type="submit"
-                className="text-white bg-[#DFBF6C] flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 mt-6"
+                className="text-black bg-[#DFBF6C] flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 mt-6"
               >
                 Send Message
                 <IoIosArrowForward />
@@ -98,13 +103,13 @@ const ContactHome2 = () => {
                 <span className="text-[#DFBF6C]">
                   <IoMdCall />
                 </span>
-                08141657882
+                <a href="tel:08173768505"> 08141657882</a>
               </p>
               <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
                 <span className="text-[#DFBF6C]">
                   <RiMailOpenFill />
                 </span>
-                info@lcrng.com
+                <a href="mailto: info@lcrng.com" target='_blank'> info@lcrng.com</a>
               </p>
               <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
                 <span className="text-[#DFBF6C]">

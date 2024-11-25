@@ -1,7 +1,7 @@
 import React from "react";
 import { IoLocation } from "react-icons/io5";
 import VIimage from "../../assets/VIhero.png";
-import { IoIosArrowForward, IoMdCheckmark } from "react-icons/io";
+import { IoIosArrowForward} from "react-icons/io";
 import PropImage from "../../assets/ViSub.png";
 import { CiDumbbell } from "react-icons/ci";
 import { MdMovieFilter } from "react-icons/md";

@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SubImage from "../../assets/subImage.png"
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from 'react-router-dom';
 
 const SubHero = () => {
+ 
+  const navigate = useNavigate()
+  const handleViewProjectBtn = () => {
+    navigate("/viprop");
+    window.scrollTo({top:0, behavior: "smooth"})
+  }
+  const handleAboutBtn = () => {
+    navigate("/about");
+    window.scrollTo({top:0, behavior: "smooth"})
+  }
   return (
     <section className="md:mt-28 mt-10">
       <div className="max-w-7xl mx-auto md:flex md:flex-row flex flex-col-reverse items-center justify-between">
@@ -16,7 +27,10 @@ const SubHero = () => {
             <p className="text-[16px] ">
               Experience luxury redefined in 'The Autobiography'.
             </p>
-            <button className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
+            <button
+              onClick={handleViewProjectBtn}
+               className="text-white bg-black flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 "
+            >
               <IoIosArrowForward />
               View projects
             </button>
@@ -32,9 +46,12 @@ const SubHero = () => {
             elegance crafted for the elites, where sophistication meets personal
             expression.
           </p>
-          <button className="text-black bg-[#dfbf6c]  flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 hover:bg-[#f0d185] ">
+          <button
+            onClick={handleAboutBtn}
+            className="text-black bg-[#dfbf6c]  flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 hover:bg-[#f0d185] "
+          >
             <IoIosArrowForward />
-            View projects
+            About us
           </button>
         </div>
       </div>
