@@ -4,8 +4,14 @@ import { IoIosArrowForward } from 'react-icons/io';
 import LogoMapAbout from "../../assets/logoAboutImage.png"
 import WhyUs from "../../assets/whyUs.png"
 import FutureBuilding from "../../assets/futureBuilding.png"
+import { useNavigate } from 'react-router-dom';
 
 const AboutHero = () => {
+
+  const navigate = useNavigate();
+  const handleBtnClick = () => {
+    navigate("/viprop");
+  }
   return (
     <section>
       {/* ABOUT HERO SECTION */}
@@ -25,11 +31,12 @@ const AboutHero = () => {
               ABOUT THE <br className="md:block hidden" /> AUTOBIOGRAPHY
             </h2>
             <p className="md:text-[20px] text-[18px] w-full">
-              An architectural marvel that redefines modern living. A symphony
-              of elegance crafted for the elites, where sophistication meets
-              personal expression.
+              The Autobiography features a modern façade with expansive glass
+              windows, blending form and function. Its design reflects the
+              personal stories and lifestyles of its residents, embodying its
+              name.
             </p>
-            <button className="text-black bg-[#dfbf6c]  flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 hover:bg-[#f0d185] ">
+            <button onClick={handleBtnClick} className="text-black bg-[#dfbf6c]  flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 hover:bg-[#f0d185] ">
               <IoIosArrowForward />
               Get Started
             </button>
@@ -59,11 +66,11 @@ const AboutHero = () => {
               WHY CHOOSE US?
             </h2>
             <p className="md:text-[20px] text-[18px] w-full">
-              An architectural marvel that redefines modern living. A symphony
-              of elegance crafted for the elites, where sophistication meets
-              personal expression.
+              We provide a perfect opportunity for investors to invest in
+              apartments built and located specially which promises high yield
+              in returns.
             </p>
-            <button className="text-black bg-[#dfbf6c]  flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 hover:bg-[#f0d185] ">
+            <button onClick={handleBtnClick} className="text-black bg-[#dfbf6c]  flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 hover:bg-[#f0d185] ">
               <IoIosArrowForward />
               Get Started
             </button>
@@ -84,7 +91,7 @@ const AboutHero = () => {
               of elegance crafted for the elites, where sophistication meets
               personal expression.
             </p>
-            <button className="text-black bg-[#dfbf6c]  flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 hover:bg-[#f0d185] ">
+            <button onClick={handleBtnClick}  className="text-black bg-[#dfbf6c]  flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 hover:bg-[#f0d185] ">
               <IoIosArrowForward />
               DISCOVER MORE
             </button>
@@ -111,7 +118,7 @@ const AboutHero = () => {
             An architectural marvel that redefines modern living. A symphony of
             elegance crafted for the elites
           </p>
-          <button className="text-black bg-[#DFBF6C] flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
+          <button onClick={handleBtnClick} className="text-black bg-[#DFBF6C] flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 ">
             <IoIosArrowForward />
             Secure a property
           </button>

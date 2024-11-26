@@ -9,6 +9,10 @@ import { FaLaptop } from "react-icons/fa";
 import { LiaSwimmingPoolSolid } from 'react-icons/lia';
 
 const ViHero = () => {
+
+  const handleEnquiry = () => {
+    window.location.href = "tel:08173768505";
+  }
   return (
     <section>
       {/*  HERO SECTION */}
@@ -82,7 +86,7 @@ const ViHero = () => {
               <span className="text-[#dfbf6c] md:text-[20px]">XXXXXX</span>
             </h2>
           </div>
-          <button className="text-black bg-[#dfbf6c]  flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 hover:bg-[#f0d185] ">
+          <button onClick={handleEnquiry} className="text-black bg-[#dfbf6c]  flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 hover:bg-[#f0d185] ">
             <IoIosArrowForward />
             Make an enquiry
           </button>
