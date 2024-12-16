@@ -1,9 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IoIosArrowForward, IoMdCall } from 'react-icons/io';
 import { IoLocation } from 'react-icons/io5';
 import { RiMailOpenFill } from 'react-icons/ri';
+import axios from 'axios';
 
 const ContactHome2 = () => {
+  const [formData, setFormData] = useState({
+    first_name: '',
+    last_name: '',
+    email: '',
+    message: '',
+  });
+
+  const [responseMessage, setResponseMessage] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:500/api/form/send', formData);
+      setResponseMessage(response.data.message);
+    } catch (error) {
+      setResponseMessage('An error occurred while sending your message.');
+    }
+  };
   return (
     <section>
       <section className="max-w-7xl mx-auto mt-20">
@@ -11,16 +37,18 @@ const ContactHome2 = () => {
           {/* contact form */}
           <div className="border border-white p-8 max-w-lg w-full ">
             <form
-              method="post"
-              action="https://script.google.com/macros/s/AKfycbwGOxjQtGRSQVGb1twL-Tza2Wo_LfjRdLCROa69v7aLKabsSX3grz8wGy_Yj7TuxPjJOg/exec"
+             onSubmit={handleSubmit}
             >
               <div className="flex items-center justify-center gap-14">
                 {/* <!-- First Name Field --> */}
                 <div className="relative">
                   <input
-                    name="First-Name"
+                    name="first_name"
                     type="text"
                     id="first_name"
+                    value={formData.first_name}
+                    onChange={handleChange}
+                    required
                     className="input-field block w-full border-b border-gray-500 bg-transparent px-2 py-3 text-white placeholder-transparent focus:outline-none focus:border-gray-300"
                     placeholder=" "
                   />
@@ -34,9 +62,12 @@ const ContactHome2 = () => {
                 {/* <!-- Last Name Field --> */}
                 <div className="relative">
                   <input
-                    name="Last-Name"
+                    name="last_name"
                     type="text"
                     id="last_name"
+                    value={formData.last_name}
+                    onChange={handleChange}
+                    required
                     className="input-field block w-full border-b border-gray-500 bg-transparent px-2 py-3 text-white placeholder-transparent focus:outline-none focus:border-gray-300 "
                     placeholder=" "
                   />
@@ -52,9 +83,12 @@ const ContactHome2 = () => {
               {/* <!-- Email Field --> */}
               <div className="relative">
                 <input
-                  name="Email"
+                  name="email"
                   type="email"
                   id="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
                   className="input-field block w-full border-b border-gray-500 bg-transparent px-2 py-3 text-white placeholder-transparent focus:outline-none focus:border-gray-300 mt-6"
                   placeholder=" "
                 />
@@ -66,8 +100,11 @@ const ContactHome2 = () => {
               {/* <!-- Message Field --> */}
               <div className="relative">
                 <textarea
-                  name="Message"
+                  name="message"
                   id="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
                   rows="6"
                   className="input-field block w-full border-b border-gray-500 bg-transparent px-2 py-3 text-white placeholder-transparent focus:outline-none focus:border-gray-300 mt-6"
                   placeholder=" "
@@ -86,6 +123,7 @@ const ContactHome2 = () => {
                 <IoIosArrowForward />
               </button>
             </form>
+            {responseMessage && <p className='md:mt-4 mt-2'>{ responseMessage}</p>}
           </div>
 
           {/*  CONTACT DETAILS */}
@@ -93,10 +131,10 @@ const ContactHome2 = () => {
             <h2 className="font-bold md:text-[40px] text-[20px] ">
               GET IN TOUCH
             </h2>
-            <p className="text-[18px]  ">
-              An architectural marvel that redefines modern living.{" "}
-              <br className="md:block hidden" />A symphony of elegance crafted
-              for the elites
+            <p className="md:text-[18px]  text-[15px] ">
+              Ready to call this masterpiece home or make it your next
+              <br className="md:block hidden" /> investment? Connect with our
+              sales team today!
             </p>
             <span>
               <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
@@ -109,7 +147,10 @@ const ContactHome2 = () => {
                 <span className="text-[#DFBF6C]">
                   <RiMailOpenFill />
                 </span>
-                <a href="mailto: info@lcrng.com" target='_blank'> info@lcrng.com</a>
+                <a href="mailto: info@lcrng.com" target="_blank">
+                  {" "}
+                  info@lcrng.com
+                </a>
               </p>
               <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
                 <span className="text-[#DFBF6C]">

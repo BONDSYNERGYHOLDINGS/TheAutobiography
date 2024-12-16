@@ -10,34 +10,40 @@ function Hero() {
   const items = [
     {
       img: Auto_img11,
-      author: 'LUXURY HOUSE',
-      title: 'THE PINNACLE ',
-      title2: ' OF MODERN',
-      topic: 'LUXURY',
-      description: 'Experience luxury redefined in The Autobiography'
+      author: "A LUXURIOUS ESCAPE ABOVE THE CITY",
+      title: "YOUR PRIVATE PARADISE",
+      topic: "3-BEDROOM ",
+      topic2: "MAISONETTE + ROOFTOP POOL & LOUNGE + 2 BQs",
+      description:
+        "Discover luxury living reimagined in this stunning maisonette. With a private rooftop pool, relaxing lounge, and two BQs, this space offers breathtaking views, exclusivity, and unmatched elegance.",
     },
     {
       img: Auto_img12,
-      author: 'MODERN VILLA',
-      title: 'SLEEK MODERN VILLA',
-      topic: 'VILLA',
-      description: 'This villa boasts sleek lines and contemporary design, perfect for minimalists.'
+      author: "PERFECTLY CRAFTED FOR YOU",
+      title: "INTIMATE LUXURY",
+      topic: "1-BEDROOM",
+      topic2: "APARTMENT",
+      description:
+        "A meticulously designed 1-bedroom apartment that blends modern simplicity with urban sophistication. Ideal for those who seek comfort and elegance in every corner.",
     },
     {
       img: Auto_img13,
-      author: 'BEACH HOUSE',
-      title: 'OCEAN VIEW HOUSE',
-      topic: 'BEACH HOUSE',
-      description: 'An incredible house with stunning views of the ocean, perfect for relaxation.'
+      author: "SPACE REDEFINED",
+      title: "ELEVATED FAMILY LIVING",
+      topic: "2-BEDROOM ",
+      topic2: "APARTMENT + BQ",
+      description:
+        "Enjoy spacious living with this thoughtfully designed 2-bedroom apartment complete with a private BQ. Every detail reflects refined taste, offering the perfect space for small families and professionals.",
     },
     {
       img: Auto_img10,
-      author: 'COUNTRY COTTAGE',
-      title: 'SLEEK',
-      title2: 'MODERN',
-      topic: 'MANSION',
-      description: 'Experience luxury redefined in The Autobiography.'
-    }
+      author: "DESIGNED TO IMPRESS",
+      title: "MODERN OPULENCE",
+      topic: "3-BEDROOM ",
+      topic2: " APARTMENT + BQ",
+      description:
+        "Step into luxury with this 3-bedroom apartment, where style meets function. Featuring elegant interiors and a dedicated BQ, it’s tailored for upscale living and ultimate comfort.",
+    },
   ];
 
   const thumbnails = [Auto_img11, Auto_img12, Auto_img13, Auto_img10];
@@ -76,8 +82,8 @@ function Hero() {
           <div className="content max-w-[80em] mx-auto md:px-0  px-5">
             <div className="author">{items[currentIndex].author}</div>
             <div className="title">{items[currentIndex].title}</div>
-            <div className="title">{items[currentIndex].title2}</div>
             <div className="topic">{items[currentIndex].topic}</div>
+            <div className="topic">{items[currentIndex].topic2}</div>
             <div className="des">{items[currentIndex].description}</div>
           </div>
         </div>
