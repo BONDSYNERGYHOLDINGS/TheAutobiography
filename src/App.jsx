@@ -3,6 +3,7 @@ import {lazy, Suspense} from 'react'
 import "./index.css"
 
 import { BrowserRouter, Route, Routes, } from 'react-router-dom';
+import ComingSoon from './components/ComingSoon';
 
 const Home = lazy(() => import("./pages/Home"));
 const Navbar = lazy(() => import("./components/navbar/Navbar"));
@@ -30,8 +31,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/viprop" element={<ViProject />} />
-          <Route path="/ikejaprop" element={<IkeProject />} />
-          <Route path="/ikoyiprop" element={<IkProject />} />
+          {/* <Route path="/ikejaprop" element={<IkeProject />} /> */}
+          <Route path="/ikejaprop" element={<ComingSoon />} />
+          {/* <Route path="/ikoyiprop" element={<IkProject />} /> */}
+          <Route path="/ikoyiprop" element={<ComingSoon />} />
          
           <Route path="/contact" element={<Contact />} />
           <Route path="/vionebed" element={<ViOneBed />} />

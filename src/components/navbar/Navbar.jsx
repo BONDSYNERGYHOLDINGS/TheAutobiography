@@ -59,7 +59,7 @@ function Navbar() {
      className={` z-50  fixed top-0 left-0 right-0 transition-all duration-500 ${
        scrolled
          ? "backdrop-blur-md bg-black/40"
-         : " md:bg-transparent bg-white "
+         : " md:bg-transparent bg-black "
      }`}
    >
      <nav className="max-w-7xl me-auto ms-auto flex items-center justify-between h-[10vh] font-[400] py-10">
