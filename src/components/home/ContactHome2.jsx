@@ -36,9 +36,7 @@ const ContactHome2 = () => {
         <div className="md:flex md:px-0 px-5 items-center justify-between">
           {/* contact form */}
           <div className="border border-white p-8 max-w-lg w-full ">
-            <form
-             onSubmit={handleSubmit}
-            >
+            <form onSubmit={handleSubmit}>
               <div className="flex items-center justify-center gap-14">
                 {/* <!-- First Name Field --> */}
                 <div className="relative">
@@ -123,7 +121,9 @@ const ContactHome2 = () => {
                 <IoIosArrowForward />
               </button>
             </form>
-            {responseMessage && <p className='md:mt-4 mt-2'>{ responseMessage}</p>}
+            {responseMessage && (
+              <p className="md:mt-4 mt-2">{responseMessage}</p>
+            )}
           </div>
 
           {/*  CONTACT DETAILS */}
@@ -141,15 +141,20 @@ const ContactHome2 = () => {
                 <span className="text-[#DFBF6C]">
                   <IoMdCall />
                 </span>
-                <a href="tel:08173768505"> 08141657882</a>
+                <a
+                  href="tel:09160302000
+"
+                >
+                  09160302000
+                </a>
               </p>
               <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
                 <span className="text-[#DFBF6C]">
                   <RiMailOpenFill />
                 </span>
-                <a href="mailto: info@lcrng.com" target="_blank">
+                <a href="mailto: info@deautobiography.com" target="_blank">
                   {" "}
-                  info@lcrng.com
+                  info@deautobiography.com
                 </a>
               </p>
               <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">

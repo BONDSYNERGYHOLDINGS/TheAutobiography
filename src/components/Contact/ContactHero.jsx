@@ -6,7 +6,7 @@ import { IoLocation } from 'react-icons/io5';
 const ContactHero = () => {
     return (
       <section>
-        <div className="max-w-7xl mx-auto">
+        <div>
           {/* CONTACT HERO */}
           <div className=" h-full flex items-center justify-center  md:mt-0 mt-20">
             <img
@@ -31,8 +31,8 @@ const ContactHero = () => {
 
           {/* OFFICE ADDRESS */}
           <div className="md:mt-20 mt-10 md:px-0 px-5">
-            <h2 className=" text-[#dfbf6c] md:text-[50px] text-[30px]">
-             OUR HEAD OFFICE
+            <h2 className=" text-[#dfbf6c] md:text-[50px] text-[30px] max-w-7xl mx-auto">
+              OUR HEAD OFFICE
             </h2>
             <div className="md:mt-10 mt-5 ">
               <iframe

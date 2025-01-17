@@ -32,15 +32,15 @@ const Footer = () => {
                 <span className="text-[#DFBF6C]">
                   <IoMdCall />
                 </span>
-                <a href="tel:08173768505"> 08141657882</a>
+                <a href="tel:09160302000"> 09160302000</a>
               </p>
               <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
                 <span className="text-[#DFBF6C]">
                   <RiMailOpenFill />
                 </span>
-                <a href="mailto: info@lcrng.com" target="_blank">
+                <a href="mailto: info@deautobiography.com" target="_blank">
                   {" "}
-                  info@lcrng.com
+                  info@deautobiography.com
                 </a>
               </p>
               <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
@@ -72,8 +72,7 @@ const Footer = () => {
 
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31717.881649289007!2d3.4013447557558285!3d6.428055038022584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf53280e7648d%3A0x4d01e5de6b847fe5!2sVictoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1732555563367!5m2!1sen!2sng"
-             className='w-[300px] h-[150px]'
-             
+              className="w-[300px] h-[150px]"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
