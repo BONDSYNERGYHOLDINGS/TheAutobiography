@@ -23,12 +23,16 @@ const IkeHero = () => {
             <h2 className="md:text-[45px] text-[20px] text-center">
               IKEJA PROJECT
             </h2>
-            <p className=" flex items-center justify-center gap-3 md:text-[18px] text-[12px] md:mt-3 mt-2">
-              <span className="text-[#dfbf6c] ">
-                <IoLocation />
-              </span>
-              Dideolu Estate VI Extension. 18 Senrolu St, Lagos
-            </p>
+           <p className=" flex items-center justify-center gap-3 md:text-[18px] text-[12px] md:mt-3 mt-2">
+                      <span className="text-[#dfbf6c] ">
+                        <IoLocation />
+                      </span>
+                      <a href="https://maps.app.goo.gl/nKLs4DSC6euDLJjV6" target="_blank" rel="noopener noreferrer">
+                        {" "}
+                        Dideolu Estate Victoria Island, Lagos State, Nigeria
+                      </a>
+                      <IoIosArrowForward />
+                    </p>
           </div>
         </div>
         {/* PROPERTIES DETAILS */}

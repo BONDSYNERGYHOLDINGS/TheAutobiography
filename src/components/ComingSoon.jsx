@@ -10,7 +10,7 @@ const ComingSoon = () => {
           This project is currently under construction. Stay tuned for updates.
         </p>
         <button
-          onClick={() => handleBtnClick("/viprop")}
+          onClick={() => window.open("/viprop")}
           className="text-black bg-[#DFBF6C] flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 "
         >
           Back to Projects

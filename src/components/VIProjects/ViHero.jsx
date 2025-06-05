@@ -17,7 +17,11 @@ const ViHero = () => {
     <section>
       {/*  HERO SECTION */}
       <div className=" h-full flex items-center justify-center  md:mt-0 mt-20">
-        <img className='w-full h-full object-cover' src={VIimage} alt="Autobiography Estate Image" />
+        <img
+          className="w-full h-full object-cover"
+          src={VIimage}
+          alt="Autobiography Estate Image"
+        />
         <div className="absolute">
           <h2 className="md:text-[45px] text-[20px] text-center">
             VICTORIA ISLAND PROJECT
@@ -26,7 +30,11 @@ const ViHero = () => {
             <span className="text-[#dfbf6c] ">
               <IoLocation />
             </span>
-            Dideolu Estate VI Extension. 18 Senrolu St, Lagos
+            <a href="https://maps.app.goo.gl/nKLs4DSC6euDLJjV6" target="_blank" rel="noopener noreferrer">
+              {" "}
+              Dideolu Estate Victoria Island, Lagos State, Nigeria
+            </a>
+            <IoIosArrowForward />
           </p>
         </div>
       </div>
@@ -86,7 +94,10 @@ const ViHero = () => {
               <span className="text-[#dfbf6c] md:text-[20px]">XXXXXX</span>
             </h2>
           </div>
-          <button onClick={handleEnquiry} className="text-black bg-[#dfbf6c]  flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 hover:bg-[#f0d185] ">
+          <button
+            onClick={handleEnquiry}
+            className="text-black bg-[#dfbf6c]  flex  items-center justify-center gap-3 px-2 py-4 w-[200px] hover:translate-y-1 duration-500 hover:bg-[#f0d185] "
+          >
             <IoIosArrowForward />
             Make an enquiry
           </button>
