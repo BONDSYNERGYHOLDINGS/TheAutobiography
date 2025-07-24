@@ -22,7 +22,8 @@ const ContactHero = () => {
                 <span className="text-[#dfbf6c] ">
                   <IoLocation />
                 </span>
-                Dideolu Estate VI Extension. 18 Senrolu St, Lagos
+                8 & 9 Adeniyi COKER STREET, 
+DIDEOLU ESTATE, V.I, Lagos
               </p>
             </div>
           </div>
@@ -36,7 +37,7 @@ const ContactHero = () => {
             </h2>
             <div className="md:mt-10 mt-5 ">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31717.881649289007!2d3.4013447557558285!3d6.428055038022584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf53280e7648d%3A0x4d01e5de6b847fe5!2sVictoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1731949317171!5m2!1sen!2sng"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3964.7540304563004!2d3.444654!3d6.42564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjUnMzIuMyJOIDPCsDI2JzQwLjgiRQ!5e0!3m2!1sen!2sng!4v1753369798579!5m2!1sen!2sng"
                 className="w-full md:h-[600px] h-[300px]"
                 allowfullscreen=""
                 loading="lazy"

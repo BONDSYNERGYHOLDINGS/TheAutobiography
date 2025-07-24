@@ -27,7 +27,8 @@ const IkeOneBed = () => {
             <span className="text-[#dfbf6c] ">
               <IoLocation />
             </span>
-            Dideolu Estate VI Extension. 18 Senrolu St, Lagos
+             8 & 9 Adeniyi COKER STREET, 
+              DIDEOLU ESTATE, V.I, Lagos
           </p>
         </div>
       </div>
