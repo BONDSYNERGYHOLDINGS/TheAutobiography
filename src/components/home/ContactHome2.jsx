@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { IoIosArrowForward, IoMdCall } from 'react-icons/io';
 import { IoLocation } from 'react-icons/io5';
 import { RiMailOpenFill } from 'react-icons/ri';
@@ -141,12 +141,25 @@ const ContactHome2 = () => {
                 <span className="text-[#DFBF6C]">
                   <IoMdCall />
                 </span>
-                <a
+               <ul>
+                <li>
+                   <a
                   href="tel:09160302000
 "
                 >
                   09160302000
                 </a>
+               
+                </li>
+                <li>
+                   <a
+                  href="tel:08102259825
+"
+                >
+                 08102259825
+                </a>
+                </li>
+               </ul>
               </p>
               <p className=" flex items-center justify-start gap-3 text-[18px] md:mt-3 mt-2">
                 <span className="text-[#DFBF6C]">
@@ -161,7 +174,7 @@ const ContactHome2 = () => {
                 <span className="text-[#DFBF6C]">
                   <IoLocation />
                 </span>
-                Landmark HQ
+               The Autobiography HQ
               </p>
             </span>
           </div>
